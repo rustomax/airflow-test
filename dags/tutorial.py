@@ -37,7 +37,7 @@ with DAG(
     )
 
     templated_command = textwrap.dedent(
-        """
+    """
     {% for i in range(5) %}
         echo "{{ ds }}"
         echo "{{ macros.ds_add(ds, 7)}}"
